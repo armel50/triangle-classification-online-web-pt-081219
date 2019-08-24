@@ -16,17 +16,9 @@ class Triangle
     firs_element = array.first
     
     sum_1 = array.first + array[1]
-    sum_2 = array.first + array.last array[1] + array.last
-    sum_3 = 
-   
-    while i < array.size do 
-      firs_element + array[i] 
-
-       
-     
-      i += 1
-      
-    end
+    sum_2 =  array[1] + array.last
+    sum_3 = array.first + array.last
+  
     
     
   end
