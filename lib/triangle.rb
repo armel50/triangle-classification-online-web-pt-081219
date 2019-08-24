@@ -23,12 +23,10 @@ class Triangle
       true
     end
   
-    
-    
   end
   
   def kind
-    
+    raise TriangleError if !is_valid?(@sides)
   end
   
     class TriangleError < StandardError
