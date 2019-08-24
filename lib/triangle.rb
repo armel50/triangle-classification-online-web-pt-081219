@@ -26,7 +26,20 @@ class Triangle
   end
   
   def kind
-    raise TriangleError if !is_valid?(@sides)
+    raise TriangleError if !is_valid?(@sides) 
+    
+    counter = [] 
+    @sides.each{|el| counter << @sides.count(el)} 
+    
+    if counter.include?(3 )
+      :equilateral
+      elsif counter.include?(2) 
+      :isosceles 
+    else 
+      :s
+    end
+    
+    
   end
   
     class TriangleError < StandardError
