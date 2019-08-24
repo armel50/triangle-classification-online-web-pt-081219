@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-    if (@side[0] < 0 || @side[1] < 0 || @side[2] < 0)
+    if (@sides[0] < 0 || @sides[1] < 0 || @sides[2] < 0)
       
         raise TriangleError
     
