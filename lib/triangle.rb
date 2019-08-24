@@ -8,25 +8,15 @@ class Triangle
     
   end
   
-  def kind
-    if (@sides[0] < 0 || @sides[1] < 0 || @sides[2] < 0)
-      
-        raise TriangleError
-      else 
-        @sides.each do |el|  
-          if @sides.count(el) == 3 
-            result = :equilateral
-            break
-          elsif @sides.count(el) == 2
-            result = :isosceles 
-            break
-          else
-            result = :scalene if @sides.count(@sides[@sides.index(el) + 1]) < 2
-          end 
-          
-        end
-        result
+  def is_valid?(array)
+    i = 0
+    
+    while i < array.size do 
+      array[i]
     end
+  end
+  
+  def kind
     
   end
   
