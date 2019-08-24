@@ -12,12 +12,17 @@ class Triangle
     
    
     return false if array.include?(0)
-    
-    firs_element = array.first
-    
+ 
     sum_1 = array.first + array[1]
     sum_2 =  array[1] + array.last
-    sum_3 = array.first + array.last
+    sum_3 = array.first + array.last 
+    
+    if sum_1 <= array.last sum_2 <= array.first||() sum_3 <=  array[1] 
+      false 
+    
+    else 
+      true
+    end
   
     
     
