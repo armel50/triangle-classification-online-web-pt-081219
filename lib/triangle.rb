@@ -12,6 +12,8 @@ class Triangle
     if (@sides[0] < 0 || @sides[1] < 0 || @sides[2] < 0)
       
         raise TriangleError
+      else 
+        @sides.all
     
     end
     
