@@ -13,8 +13,17 @@ class Triangle
       
         raise TriangleError
       else 
-       :equilateral if  @sides.all?{|el| el = @sides.first}
-    
+        @sides.each do |el|  
+          if @sides.count(el) == 3 
+            result = :equilateral
+            break
+          elsif @sides.count(el) == 2
+            result = :isosceles 
+            break
+          else
+            result = :scalene if @sides.count(@sides[el.index])
+          end
+        end
     end
     
   end
