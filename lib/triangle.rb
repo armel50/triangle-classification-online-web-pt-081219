@@ -36,7 +36,7 @@ class Triangle
       elsif counter.include?(2) 
       :isosceles 
     else 
-      :s
+      :scalene
     end
     
     
