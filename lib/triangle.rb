@@ -13,7 +13,7 @@ class Triangle
       
         raise TriangleError
       else 
-        @sides.all
+        @sides.all?{|el| :equilateral if el.first = el}
     
     end
     
