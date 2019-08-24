@@ -21,7 +21,7 @@ class Triangle
             result = :isosceles 
             break
           else
-            result = :scalene if @sides.count(@sides[el.index])
+            result = :scalene if @sides.count(@sides[@sides.index(el) + 1]) < 2
           end
         end
     end
